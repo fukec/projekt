@@ -3,443 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anglina - Učení anglických slovíček</title>
-    <meta name="description" content="Progressive Web App pro učení anglických slovíček s testy, flashcards a CSV importem">
-    <meta name="theme-color" content="#21808D">
+    <title>Anglina - Inteligentní výuka slovíček</title>
     
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQW5nbGluYSAtIFXEjWVuw60gYW5nbGlja8O9Y2ggc2xvdsOtxI1layIsInNob3J0X25hbWUiOiJBbmdsaW5hIiwic3RhcnRfdXJsIjoiLiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNGQ0ZDRjkiLCJ0aGVtZV9jb2xvciI6IiMyMTgwOEQiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhkcFpIUm9QU0k0TURBY0lTQm9aV2xuYUhROUlqZ3dNQ0lnZG1sbGQwSnZlRDBpTUNBd0lEZ3dNQ0E0TURESU1GMGdabWxzYkQwaUl6SXhPREE0UkNJK1BHTnBjbU5zWlNCamVEMGlOREF3SWlCamVUMGlOREF3SWlCeVBTSTBPQ0krUEM5amFYSmpiR1UrUEdkK1BIUmxlSFFnZUQwaU5EQXdJaUI1UFNJd05qQWlJSFJsZUhRdFlXNWphRzl5UFNKdGFXUmtiR1VpSUdacGJHdzlJaU0xUlVZMVJqVWlJR1p2Ym5RdGMybDZaVDBpTWpSd2VDSWdabTl1ZEMxM1pXbG5hSFE5SWpZd01DSStRVzVuYkdsdVlUd3ZkR1Y0ZEQ0OEwyYysrRGN2Ym5Zdk9qVjRPaEE1YkQvWDhOQ2JQU2ZEUEEyZnhOeTlBQT1BUVQiLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9LHsic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhkcFpIUm9QU0k1TWpZaUlHaGxhV2RvZEQwaU9USTJJaUIyYVdWM1FtOTRQU0l3SURBZ09USTJJRGt5TmlJZ1ptbHNiRDBpSXpJeE9EQTRSQ0krUEdOcGNtTnNaU0JqZUQwaU5EWXpJaUJqZVQwaU5EWXpJaUJ5UFNJMk1DSStQQzlqYVhKamJHVStQR2MrUEhSbGVIUWdlRDBpTkRZeklpQjVQU0k1TmlJZ2RHVjRkQzFoYm1Ob2IzSTlJbTFwWkdSc1pTSWdabWxzYkQwaUl6VkZSalZHTlVZaUlHWnZiblF0YzJsNlpUMGlOREJ3ZUNJZ1ptOXVkQzEzWldsbmFIUTlJall3TUNJK1FXNW5iR2x1WVR3dmRHVjRkRDQ4TDJjK1BDOXpkbWMrIiwic2l6ZXMiOiI1MTJ4NTEyIiwidHlwZSI6ImltYWdlL3N2Zyt4bWwifV19">
+    <!-- PWA Meta tagy -->
+    <meta name="description" content="Pokročilá PWA aplikace pro učení anglických slovíček s intelligentním testováním">
+    <meta name="theme-color" content="#4285f4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Anglina">
     
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiB2aWV3Qm94PSIwIDAgMTkyIDE5MiIgZmlsbD0iIzIxODA4RCI+PGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iOTAiLz48Zz48dGV4dCB4PSI5NiIgeT0iMTE2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRkNGQ0Y5IiBmb250LXNpemU9IjQ4cHgiIGZvbnQtd2VpZ2h0PSI2MDAiPkE8L3RleHQ+PC9nPjwvc3ZnPg==">
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
     
+    <!-- Icons -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📚 Anglina</h1>
+            <p class="subtitle">Inteligentní výuka anglických slovíček</p>
+        </header>
+
         <!-- Navigation -->
-        <nav class="navbar">
-            <div class="container flex items-center justify-between">
-                <div class="navbar-brand">
-                    <h1 class="navbar-title">Anglina</h1>
-                </div>
-                <button class="btn btn--secondary btn--sm" id="themeToggle">🌙</button>
-            </div>
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="study">📖 Učení</button>
+            <button class="nav-tab" data-tab="test">✏️ Test</button>
+            <button class="nav-tab" data-tab="manage">⚙️ Správa</button>
+            <button class="nav-tab" data-tab="stats">📊 Statistiky</button>
         </nav>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Home Screen -->
-            <div id="homeScreen" class="screen active">
-                <div class="container">
-                    <div class="hero">
-                        <h2>Učení anglických slovíček</h2>
-                        <p>Procvičujte si anglickou slovní zásobu pomocí testů a flashcards</p>
+        <!-- Study Tab -->
+        <div id="study" class="tab-content active">
+            <div class="study-mode">
+                <h2>Procvičování slovíček</h2>
+                <div class="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-front">
+                            <p id="word-display">Klikněte na "Začít procvičování" pro načtení slovíčka</p>
+                        </div>
+                        <div class="flashcard-back hidden">
+                            <p id="translation-display"></p>
+                        </div>
                     </div>
-                    
-                    <div class="menu-grid">
-                        <button class="menu-card" data-screen="testScreen">
-                            <div class="menu-card__icon">📝</div>
-                            <h3>Test slovíček</h3>
-                            <p>Otestujte své znalosti</p>
-                        </button>
-                        
-                        <button class="menu-card" data-screen="flashcardsScreen">
-                            <div class="menu-card__icon">🔄</div>
-                            <h3>Flashcards</h3>
-                            <p>Procvičování pomocí kartiček</p>
-                        </button>
-                        
-                        <button class="menu-card" data-screen="manageScreen">
-                            <div class="menu-card__icon">📚</div>
-                            <h3>Správa slovíček</h3>
-                            <p>Přidávejte a editujte slovíčka</p>
-                        </button>
-                        
-                        <button class="menu-card" data-screen="csvImportScreen">
-                            <div class="menu-card__icon">📥</div>
-                            <h3>CSV Import</h3>
-                            <p>Hromadné nahrání slovíček</p>
-                        </button>
-                        
-                        <button class="menu-card" data-screen="statsScreen">
-                            <div class="menu-card__icon">📊</div>
-                            <h3>Statistiky</h3>
-                            <p>Sledujte svůj pokrok</p>
-                        </button>
-                        
-                        <button class="menu-card" data-screen="settingsScreen">
-                            <div class="menu-card__icon">⚙️</div>
-                            <h3>Nastavení</h3>
-                            <p>Konfigurace aplikace</p>
-                        </button>
+                    <div class="flashcard-controls">
+                        <button id="start-study" class="btn btn-primary">Začít procvičování</button>
+                        <button id="flip-card" class="btn btn-secondary hidden">Otočit kartu</button>
+                        <button id="next-card" class="btn btn-secondary hidden">Další slovíčko</button>
+                        <button id="know-word" class="btn btn-success hidden">Umím ✓</button>
+                        <button id="dont-know-word" class="btn btn-danger hidden">Neumím ✗</button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Test Screen -->
-            <div id="testScreen" class="screen">
-                <div class="container">
-                    <div class="screen-header">
-                        <button class="btn btn--outline btn--sm back-btn" data-back="homeScreen">← Zpět</button>
-                        <h2>Test slovíček</h2>
+                
+                <div class="study-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="study-progress"></div>
                     </div>
-                    
-                    <div id="testSetup" class="test-setup">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Nastavení testu</h3>
-                                
-                                <div class="form-group">
-                                    <label class="form-label">Typ testu</label>
-                                    <select id="testType" class="form-control">
-                                        <option value="en-cz">Angličtina → Čeština</option>
-                                        <option value="cz-en">Čeština → Angličtina</option>
-                                        <option value="multiple-choice">Výběr z možností</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="form-label">Počet otázek</label>
-                                    <select id="questionCount" class="form-control">
-                                        <option value="5">5 otázek</option>
-                                        <option value="10" selected>10 otázek</option>
-                                        <option value="20">20 otázek</option>
-                                        <option value="all">Všechna slovíčka</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="form-label">Kategorie</label>
-                                    <select id="testCategory" class="form-control">
-                                        <option value="all">Všechny kategorie</option>
-                                    </select>
-                                </div>
-                                
-                                <button class="btn btn--primary btn--full-width" id="startTest">Spustit test</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="testProgress" class="test-progress hidden">
-                        <div class="progress-bar">
-                            <div class="progress-fill" id="progressFill"></div>
-                        </div>
-                        <p class="progress-text" id="progressText">Otázka 1 z 10</p>
-                    </div>
-                    
-                    <div id="testQuestion" class="test-question hidden">
-                        <div class="card">
-                            <div class="card__body">
-                                <div class="question-content">
-                                    <h3 id="questionText">Přeložte slovíčko:</h3>
-                                    <div class="question-word" id="questionWord"></div>
-                                    
-                                    <div id="answerInput" class="answer-input">
-                                        <input type="text" class="form-control" id="userAnswer" placeholder="Zadejte překlad">
-                                        <button class="btn btn--primary" id="submitAnswer">Odpovědět</button>
-                                    </div>
-                                    
-                                    <div id="multipleChoice" class="multiple-choice hidden">
-                                        <div class="choice-buttons" id="choiceButtons"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="testResult" class="test-result hidden">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Výsledky testu</h3>
-                                <div class="result-stats">
-                                    <div class="stat">
-                                        <span class="stat-value" id="correctCount">0</span>
-                                        <span class="stat-label">Správně</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-value" id="wrongCount">0</span>
-                                        <span class="stat-label">Špatně</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-value" id="scorePercentage">0%</span>
-                                        <span class="stat-label">Úspěšnost</span>
-                                    </div>
-                                </div>
-                                <div class="result-actions">
-                                    <button class="btn btn--primary" id="retakeTest">Opakovat test</button>
-                                    <button class="btn btn--outline" id="backToHome">Domů</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p id="study-counter">0 / 0 slovíček</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Flashcards Screen -->
-            <div id="flashcardsScreen" class="screen">
-                <div class="container">
-                    <div class="screen-header">
-                        <button class="btn btn--outline btn--sm back-btn" data-back="homeScreen">← Zpět</button>
-                        <h2>Flashcards</h2>
-                    </div>
-                    
-                    <div id="flashcardSetup" class="flashcard-setup">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Nastavení flashcards</h3>
-                                
-                                <div class="form-group">
-                                    <label class="form-label">Kategorie</label>
-                                    <select id="flashcardCategory" class="form-control">
-                                        <option value="all">Všechny kategorie</option>
-                                    </select>
-                                </div>
-                                
-                                <button class="btn btn--primary btn--full-width" id="startFlashcards">Spustit flashcards</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="flashcardContainer" class="flashcard-container hidden">
-                        <div class="flashcard-progress">
-                            <span id="flashcardCounter">1 z 10</span>
-                        </div>
-                        
-                        <div class="flashcard" id="flashcard">
-                            <div class="flashcard-inner">
-                                <div class="flashcard-front">
-                                    <div class="flashcard-content">
-                                        <span class="flashcard-lang">EN</span>
-                                        <div class="flashcard-word" id="flashcardFront"></div>
-                                    </div>
-                                </div>
-                                <div class="flashcard-back">
-                                    <div class="flashcard-content">
-                                        <span class="flashcard-lang">CZ</span>
-                                        <div class="flashcard-word" id="flashcardBack"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="flashcard-controls">
-                            <button class="btn btn--outline" id="prevFlashcard">← Předchozí</button>
-                            <button class="btn btn--secondary" id="flipCard">Otočit</button>
-                            <button class="btn btn--outline" id="nextFlashcard">Další →</button>
-                        </div>
-                        
-                        <div class="flashcard-actions">
-                            <button class="btn btn--outline btn--full-width" id="exitFlashcards">Ukončit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Manage Words Screen -->
-            <div id="manageScreen" class="screen">
-                <div class="container">
-                    <div class="screen-header">
-                        <button class="btn btn--outline btn--sm back-btn" data-back="homeScreen">← Zpět</button>
-                        <h2>Správa slovíček</h2>
-                    </div>
-                    
-                    <div class="manage-actions">
-                        <button class="btn btn--primary" id="addWordBtn">+ Přidat slovíčko</button>
-                        <button class="btn btn--outline" id="exportCsvBtn">📤 Export CSV</button>
-                    </div>
-                    
-                    <div class="filter-controls">
-                        <div class="form-group">
-                            <select id="filterCategory" class="form-control">
-                                <option value="all">Všechny kategorie</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="searchWords" placeholder="Hledat slovíčka...">
-                        </div>
-                    </div>
-                    
-                    <div id="wordsList" class="words-list">
-                        <!-- Words will be populated here -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- CSV Import Screen -->
-            <div id="csvImportScreen" class="screen">
-                <div class="container">
-                    <div class="screen-header">
-                        <button class="btn btn--outline btn--sm back-btn" data-back="homeScreen">← Zpět</button>
-                        <h2>CSV Import</h2>
-                    </div>
-                    
-                    <div class="import-instructions">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Formát CSV souboru</h3>
-                                <p>Soubor musí obsahovat sloupce v tomto pořadí:</p>
-                                <code>english,czech,category</code>
-                                <p class="mt-8">Příklad:</p>
-                                <pre>english,czech,category
-hello,ahoj,základní
-goodbye,sbohem,základní</pre>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="import-upload">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Nahrát CSV soubor</h3>
-                                <div class="upload-area" id="uploadArea">
-                                    <input type="file" id="csvFileInput" accept=".csv" class="hidden">
-                                    <div class="upload-content">
-                                        <div class="upload-icon">📁</div>
-                                        <p>Klikněte pro výběr CSV souboru</p>
-                                        <p class="upload-hint">nebo přetáhněte soubor sem</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="csvPreview" class="csv-preview hidden">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Náhled importovaných dat</h3>
-                                <div id="previewTable"></div>
-                                <div class="import-actions">
-                                    <button class="btn btn--primary" id="confirmImport">Importovat slovíčka</button>
-                                    <button class="btn btn--outline" id="cancelImport">Zrušit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Statistics Screen -->
-            <div id="statsScreen" class="screen">
-                <div class="container">
-                    <div class="screen-header">
-                        <button class="btn btn--outline btn--sm back-btn" data-back="homeScreen">← Zpět</button>
-                        <h2>Statistiky</h2>
-                    </div>
-                    
-                    <div class="stats-overview">
-                        <div class="stats-grid">
-                            <div class="stat-card">
-                                <div class="stat-value" id="totalWords">0</div>
-                                <div class="stat-label">Celkem slovíček</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value" id="totalTests">0</div>
-                                <div class="stat-label">Provedených testů</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value" id="avgScore">0%</div>
-                                <div class="stat-label">Průměrná úspěšnost</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value" id="totalCategories">0</div>
-                                <div class="stat-label">Kategorií</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="recent-tests">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Poslední testy</h3>
-                                <div id="recentTestsList">
-                                    <!-- Recent tests will be populated here -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Settings Screen -->
-            <div id="settingsScreen" class="screen">
-                <div class="container">
-                    <div class="screen-header">
-                        <button class="btn btn--outline btn--sm back-btn" data-back="homeScreen">← Zpět</button>
-                        <h2>Nastavení</h2>
-                    </div>
-                    
-                    <div class="settings-sections">
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Vzhled</h3>
-                                <div class="form-group">
-                                    <label class="form-label">Téma</label>
-                                    <select id="themeSelect" class="form-control">
-                                        <option value="auto">Automatické</option>
-                                        <option value="light">Světlé</option>
-                                        <option value="dark">Tmavé</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Zálohování dat</h3>
-                                <div class="backup-actions">
-                                    <button class="btn btn--outline btn--full-width" id="exportDataBtn">📤 Exportovat vše do CSV</button>
-                                    <button class="btn btn--outline btn--full-width mt-8" id="clearDataBtn">🗑️ Vymazat všechna data</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>O aplikaci</h3>
-                                <p>Anglina v1.0</p>
-                                <p>Progressive Web App pro učení anglických slovíček</p>
-                                <div class="mt-8">
-                                    <button class="btn btn--primary btn--full-width" id="installAppBtn" style="display: none;">📱 Nainstalovat aplikaci</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Word Edit Modal -->
-    <div id="wordModal" class="modal hidden">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modalTitle">Přidat slovíčko</h3>
-                <button class="modal-close" id="closeModal">×</button>
-            </div>
-            <div class="modal-body">
-                <form id="wordForm">
+        <!-- Test Tab -->
+        <div id="test" class="tab-content">
+            <div class="test-mode">
+                <h2>Testování znalostí</h2>
+                
+                <!-- Test Configuration -->
+                <div class="test-config" id="test-config">
                     <div class="form-group">
-                        <label class="form-label">Anglicky</label>
-                        <input type="text" class="form-control" id="englishInput" required>
+                        <label for="question-count">Počet otázek:</label>
+                        <input type="number" id="question-count" min="1" max="100" value="10" class="form-control">
                     </div>
+                    
                     <div class="form-group">
-                        <label class="form-label">Česky</label>
-                        <input type="text" class="form-control" id="czechInput" required>
+                        <label for="test-direction">Směr testování:</label>
+                        <select id="test-direction" class="form-control">
+                            <option value="mix">Mix (obojí směry)</option>
+                            <option value="en-cs">Anglicky → Česky</option>
+                            <option value="cs-en">Česky → Anglicky</option>
+                        </select>
                     </div>
+                    
                     <div class="form-group">
-                        <label class="form-label">Kategorie</label>
-                        <input type="text" class="form-control" id="categoryInput" required>
+                        <label for="test-type">Typ testu:</label>
+                        <select id="test-type" class="form-control">
+                            <option value="all">Všechna slovíčka</option>
+                            <option value="wrong">Pouze problémová slovíčka</option>
+                            <option value="recent">Nedávno přidaná</option>
+                        </select>
                     </div>
-                    <div class="modal-actions">
-                        <button type="submit" class="btn btn--primary">Uložit</button>
-                        <button type="button" class="btn btn--outline" id="cancelWordEdit">Zrušit</button>
+                    
+                    <div class="test-controls">
+                        <button id="start-test" class="btn btn-primary">Začít test</button>
                     </div>
-                </form>
+                </div>
+
+                <!-- Test Question -->
+                <div class="test-question hidden" id="test-question">
+                    <div class="question-header">
+                        <span class="question-counter" id="question-counter">1 / 10</span>
+                        <span class="test-score" id="test-score">Skóre: 0/0</span>
+                    </div>
+                    
+                    <div class="question-card">
+                        <div class="question-direction" id="question-direction">Anglicky → Česky</div>
+                        <div class="question-word" id="question-word">Hello</div>
+                        <input type="text" id="answer-input" placeholder="Zadejte překlad..." class="form-control" autocomplete="off">
+                        <button id="submit-answer" class="btn btn-primary">Potvrdit odpověď</button>
+                    </div>
+                    
+                    <!-- Immediate Feedback -->
+                    <div class="feedback-container hidden" id="feedback-container">
+                        <div class="feedback-message" id="feedback-message"></div>
+                        <div class="correct-answer" id="correct-answer"></div>
+                        <button id="next-question" class="btn btn-secondary">Další otázka</button>
+                    </div>
+                </div>
+
+                <!-- Test Results -->
+                <div class="test-results hidden" id="test-results">
+                    <h3>Výsledky testu</h3>
+                    <div class="results-summary">
+                        <div class="score-display">
+                            <span class="final-score" id="final-score">0/0</span>
+                            <span class="score-percentage" id="score-percentage">0%</span>
+                        </div>
+                        <div class="results-details" id="results-details"></div>
+                    </div>
+                    <div class="results-actions">
+                        <button id="retry-test" class="btn btn-primary">Opakovat test</button>
+                        <button id="new-test" class="btn btn-secondary">Nový test</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Tab -->
+        <div id="manage" class="tab-content">
+            <div class="manage-mode">
+                <h2>Správa slovíček</h2>
+                
+                <!-- Add Word Form -->
+                <div class="add-word-form">
+                    <h3>Přidat nové slovíčko</h3>
+                    <div class="form-row">
+                        <input type="text" id="new-english" placeholder="Anglické slovíčko" class="form-control">
+                        <input type="text" id="new-czech" placeholder="Český překlad" class="form-control">
+                        <input type="text" id="new-category" placeholder="Kategorie" class="form-control">
+                        <button id="add-word" class="btn btn-primary">Přidat</button>
+                    </div>
+                </div>
+
+                <!-- CSV Import -->
+                <div class="csv-import">
+                    <h3>Hromadný import (CSV)</h3>
+                    <div class="file-drop-zone" id="file-drop-zone">
+                        <p>Přetáhněte CSV soubor sem nebo klikněte pro výběr</p>
+                        <input type="file" id="csv-file" accept=".csv" class="hidden">
+                        <button id="browse-file" class="btn btn-secondary">Procházet soubory</button>
+                    </div>
+                    <div class="csv-preview hidden" id="csv-preview">
+                        <h4>Náhled importovaných dat:</h4>
+                        <div id="preview-table"></div>
+                        <div class="import-actions">
+                            <button id="confirm-import" class="btn btn-success">Potvrdit import</button>
+                            <button id="cancel-import" class="btn btn-danger">Zrušit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Word List -->
+                <div class="word-list">
+                    <h3>Seznam slovíček</h3>
+                    <div class="word-filters">
+                        <input type="text" id="search-words" placeholder="Hledat slovíčka..." class="form-control">
+                        <select id="filter-category" class="form-control">
+                            <option value="">Všechny kategorie</option>
+                        </select>
+                        <button id="export-csv" class="btn btn-secondary">Export CSV</button>
+                        <button id="reset-mistakes" class="btn btn-warning">Reset chyb</button>
+                    </div>
+                    <div class="words-container" id="words-container">
+                        <p>Načítání slovíček...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Tab -->
+        <div id="stats" class="tab-content">
+            <div class="stats-mode">
+                <h2>Statistiky a pokrok</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Celkový počet slovíček</h3>
+                        <div class="stat-value" id="total-words">0</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <h3>Procvičená slovíčka</h3>
+                        <div class="stat-value" id="learned-words">0</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <h3>Úspěšnost testů</h3>
+                        <div class="stat-value" id="test-accuracy">0%</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <h3>Problémová slovíčka</h3>
+                        <div class="stat-value" id="difficult-words">0</div>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <h3>Pokrok podle kategorií</h3>
+                    <div id="category-progress"></div>
+                </div>
+
+                <div class="mistakes-section">
+                    <h3>Nejčastější chyby</h3>
+                    <div id="common-mistakes"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation Banner -->
+        <div class="install-banner hidden" id="install-banner">
+            <div class="banner-content">
+                <span>📱 Instalovat Anglina jako aplikaci?</span>
+                <div class="banner-actions">
+                    <button id="install-app" class="btn btn-primary">Instalovat</button>
+                    <button id="dismiss-banner" class="btn btn-secondary">Zrušit</button>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Loading Overlay -->
+    <div class="loading-overlay hidden" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Načítání...</p>
+    </div>
+
+    <!-- Scripts -->
     <script src="app.js"></script>
 </body>
 </html>
