@@ -1,0 +1,50 @@
+english,czech,category
+hello,ahoj,základní
+goodbye,sbohem,základní
+thank you,děkuji,základní
+please,prosím,základní
+yes,ano,základní
+no,ne,základní
+excuse me,promiňte,základní
+apple,jablko,jídlo
+banana,banán,jídlo
+water,voda,jídlo
+bread,chléb,jídlo
+milk,mléko,jídlo
+coffee,káva,jídlo
+tea,čaj,jídlo
+car,auto,transport
+bus,autobus,transport
+train,vlak,transport
+bicycle,kolo,transport
+airplane,letadlo,transport
+work,práce,práce
+office,kancelář,práce
+computer,počítač,práce
+meeting,schůzka,práce
+project,projekt,práce
+movie,film,volný čas
+music,hudba,volný čas
+book,kniha,volný čas
+game,hra,volný čas
+sport,sport,volný čas
+house,dům,domov
+room,pokoj,domov
+kitchen,kuchyně,domov
+bathroom,koupelna,domov
+garden,zahrada,domov
+family,rodina,rodina
+mother,matka,rodina
+father,otec,rodina
+brother,bratr,rodina
+sister,sestra,rodina
+school,škola,vzdělání
+teacher,učitel,vzdělání
+student,student,vzdělání
+lesson,lekce,vzdělání
+homework,domácí úkol,vzdělání
+doctor,doktor,zdraví
+hospital,nemocnice,zdraví
+medicine,lék,zdraví
+healthy,zdravý,zdraví
+sick,nemocný,zdraví

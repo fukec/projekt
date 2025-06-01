@@ -1,0 +1,62 @@
+{
+  "name": "Anglina - Učení anglických slovíček",
+  "short_name": "Anglina",
+  "description": "Progressive Web App pro učení anglických slovíček s testy, flashcards a CSV importem",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FCFCF9",
+  "theme_color": "#21808D",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "lang": "cs",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgODAwIDgwMCIgZmlsbD0iIzIxODA4RCI+PGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSI0OCIvPjxnPjx0ZXh0IHg9IjQwMCIgeT0iNDYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNUVGNUY1IiBmb250LXNpemU9IjI0cHgiIGZvbnQtd2VpZ2h0PSI2MDAiPkFuZ2xpbmE8L3RleHQ+PC9nPjwvc3ZnPg==",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0iIzIxODA4RCI+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIvPjx0ZXh0IHg9IjI1NiIgeT0iMzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNUVGNUY1IiBmb250LXNpemU9IjQwcHgiIGZvbnQtd2VpZ2h0PSI2MDAiPkFuZ2xpbmE8L3RleHQ+PC9zdmc+",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNzAwIiB2aWV3Qm94PSIwIDAgNDAwIDcwMCIgZmlsbD0iI0ZDRkNGOSI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiNGQ0ZDRjkiLz48dGV4dCB4PSIyMDAiIHk9IjEwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIzMnB4IiBmaWxsPSIjMjE4MDhEIj5BbmdsaW5hPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4cHgiIGZpbGw9IiM2MjZDNzEiPlRlc3QgYW5nbGlja/FjaCBzbG92w63EjWVrPC90ZXh0PjwvZz48L3N2Zz4=",
+      "sizes": "400x700",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nový test",
+      "short_name": "Test",
+      "description": "Spustit nový test slovíček",
+      "url": "./?action=test",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyMTgwOEQiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0ibTEyIDMgOCAxMEw4IDIzeiIvPjwvc3ZnPg==",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Flashcards",
+      "short_name": "Kartičky",
+      "description": "Procvičování pomocí kartiček",
+      "url": "./?action=flashcards",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyMTgwOEQiIHN0cm9rZS13aWR0aD0iMiI+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMiIgcnk9IjIiLz48cGF0aCBkPSJtOSAxMiAyIDIgNC00Ii8+PC9zdmc+",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
